@@ -10,7 +10,7 @@ Automation Pracitce is a site dedicated to automation testing and manual testing
 
 The main goal was to learn good practices for writing test cases. This resulted in thirty test cases in six different sections. This was enough to cover some of the negative cases and all the positive ones.
 
-<img alt="Application view" src="https://github.com/Fibibb/Automation-Practice/blob/main/app01.png">
+<img alt="Application view" src="https://github.com/Fibibb/Automation-Practice/blob/main/app.01.png">
 
 ## Includes
 
