@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Create account</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Create account with required data</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User has an email address </preconds>
+										<steps_separated><step>
+<index>1</index><content>User enters his email address</content><expected>User&apos;s e-mail address appears in the text field </expected></step>
+<step>
+<index>2</index><content>User clicks the button &quot;create an account&quot;</content><expected>User is taken to a page to enter personal data </expected></step>
+<step>
+<index>3</index><content>User fills in the fields with the required personal data (first name, last name, password, home address, postal address, country of residence, state, telephone number)</content><expected>The fields are filled in</expected></step>
+<step>
+<index>4</index><content> User presses the &quot;register&quot; button</content><expected>User is transferred to the &quot;my account&quot; page</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>Create an account (with optional data)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>the user has an email address</preconds>
+										<steps_separated><step>
+<index>1</index><content>User enters the e-mail address in the text field.</content><expected>User&apos;s e-mail address appears in the text field.</expected></step>
+<step>
+<index>2</index><content>User presses create an account.</content><expected>User is transferred to the page for adding personal data.</expected></step>
+<step>
+<index>3</index><content>User fills in the fields with personal information (optional and required). </content><expected>The fields are filled in.</expected></step>
+<step>
+<index>4</index><content>User presses the register button.</content><expected>User is redirected to the &quot;my account&quot; page.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Login</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C3</id>
+				<title>The user can log in</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User has an account on the website</preconds>
+										<steps_separated><step>
+<index>1</index><content>User enters the e-mail address and password in the text fields.</content><expected>The text fields are filled in.</expected></step>
+<step>
+<index>2</index><content>The user presses the &quot;Sign in&quot; button.</content><expected>The user is logged in and taken to the &quot;my account&quot; page.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>The user can go to the login section</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User  has access to the home page.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the sign in button.
+
+![](index.php?/attachments/get/8f6f21b3-9411-4d21-80ba-d69091780a39)&amp;nbsp; </content><expected>User is taken to the &quot;AUTHENTICATION&quot; page.
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>User can log in with an incorrect password (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User has an account on the website.</preconds>
+										<steps_separated><step>
+<index>1</index><content>User fills in the fields &quot;email address&quot; and &quot;password&quot; with an incorrect password.</content><expected>User is not logged in and is taken to the &quot;my account&quot; page.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>The user can sign out</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is logged in.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &apos;sign out&apos; button.</content><expected>The user is logged out.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Contact us</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C6</id>
+				<title>Contact us button (logged in, required fields only)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is logged in on the website. </preconds>
+										<steps_separated><step>
+<index>1</index><content>User presses the &apos;contact us&apos; button.</content><expected>User is redirected to the &quot;CUSTOMER SERVICE - CONTACT US&quot; page, with a pre-filled email address field.</expected></step>
+<step>
+<index>2</index><content>The user fills in the required fields (Subject heading, message) </content><expected>The fields are filled in.</expected></step>
+<step>
+<index>3</index><content>The user presses the &apos;send&apos; button.</content><expected>The message is sent.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>sending messages via the &apos;contact us&apos; section without filling in the &apos;message&apos; field while logged in  (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is logged in. </preconds>
+										<steps_separated><step>
+<index>1</index><content>User fills in the required fields (Subject Heading), the email field is already filled in. 
+</content><expected>the text fields are filled in.</expected></step>
+<step>
+<index>2</index><content>The user presses the send button without filling in the &apos;message&apos; field.</content><expected>Message is not sent.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Sending messages via the &apos;contact us&apos; section (not logged in, required fields only)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is in the &apos;contact us&apos; section and is not logged in.</preconds>
+										<steps_separated><step>
+<index>1</index><content>User fills in all fields (Subject Heading, Email address, Order reference, Attach File, Message).
+</content><expected>The fields are filled in.</expected></step>
+<step>
+<index>2</index><content>User presses &apos;send&apos; button.</content><expected>The message is sent.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Sending messages via the &apos;contact us&apos; section (logged in, additional data)</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is not logged in to the website. User is on the &apos;CUSTOMER SERVICE - CONTACT US&apos; page. </preconds>
+										<steps_separated><step>
+<index>1</index><content>The user fills in the required and optional fields (Subject Heading, Email address, Order reference, attach file, message). </content><expected>the fields are filled in.</expected></step>
+<step>
+<index>2</index><content>User presses send button.</content><expected>The message is sent.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Sending messages via the &apos;contact us&apos; section (not logged in, additional data)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is not logged into the site, the user is in the &apos;Contact us&apos; section.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user fills in the required and optional fields (Subject Heading, Email address, Order reference, attach file, message)
+</content><expected>the fields are filled in.</expected></step>
+<step>
+<index>2</index><content>The user presses send button.</content><expected>the message is sent.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Quick view</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C12</id>
+				<title>Using the quick view option on the home page</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is on the homepage.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user moves the cursor over the image and presses the &apos;quick view&apos; button. </content><expected>The user is taken to the product preview.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Adding a product to the cart from the &apos;quick view&apos; preview</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is in the &apos;quick view&apos; preview.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user selects values: quantity (default 1), size (default s) and colour.</content><expected>values are selected.</expected></step>
+<step>
+<index>2</index><content>The user presses the &apos;add to cart&apos; button.</content><expected>The product is added to the shopping cart, you are redirected to the shopping cart summary page.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>The user is able to share the product on social media from quick view (Twitter)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is in the &apos;quick view&apos; preview.</preconds>
+										<steps_separated><step>
+<index>1</index><content>User presses &quot;Tweet&quot; button.</content><expected>A window appears with the option to publish a tweet.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C24</id>
+				<title>The user is able to share the product on social media from quick view (Facebook)</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is in a &quot;quick view&quot; preview</preconds>
+										<steps_separated><step>
+<index>1</index><content>User presses the &quot;share&quot; button (facebook)</content><expected>A window appears with the option to share the product on Facebook.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>The user is able to share the product on social media from quick view (Google+)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is in a &quot;quick view&quot; preview</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &quot;Google +&quot; button. </content><expected>A window appears with the option to share the product on Google+.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C26</id>
+				<title>The user is able to share the product on social media from quick view (Pinterest)</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is in a &quot;quick view&quot; preview.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &quot;Pinterest&quot; button</content><expected>A window appears with the option to share the product on Pinterest.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>Adding a product to the wish list from the quick view preview</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is logged in, the user is in quick view.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &apos;add to wishlist&apos; button.</content><expected>The product is added to the wishlist, the message &quot;product added to the wishlist&quot; appears.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Cart</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C18</id>
+				<title>Proceeding to checkout from the shopping basket summary</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is logged in, the user has added the product to the cart, the user is at the cart summary level.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &apos;proceed to checkout&apos; button.
+
+</content><expected>The user is transferred to the &apos;SHOPPING-CART SUMMARY&apos; section.
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>Adding products to cart</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is logged in, user is in product preview.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &apos;add to cart&apos; button.</content><expected>The user is redirected to the basket summary, the item is added to the basket. The buttons &quot;continue shopping&quot;, &quot;Proceed to checkout&quot; are displayed. </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C19</id>
+				<title>Proceed to checkout from the shopping cart (not logged)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is not logged in, the user has added the product to the shopping cart, the user is in &quot;SHOPPING-CART SUMMARY&quot;, in the &apos;summary&apos; section.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &quot;proceed to checkout&quot; button.</content><expected>The user is redirected to the &apos;sign in&apos; section with a request to log in or create an account.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C20</id>
+				<title>Proceed to checkout from the shopping cart (logged in, no optional data)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is logged in, the user has added the product to the shopping cart, the user is in &quot;SHOPPING-CART SUMMARY&quot;, in the &apos;summary&apos; section.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &quot;proceed to checkout&quot; button.</content><expected>The user is redirected to the &quot;address&quot; section.</expected></step>
+<step>
+<index>2</index><content>The user presses the &quot;proceed to checkout&quot; button.</content><expected>The user is redirected to the &quot;shipping&quot; section.</expected></step>
+<step>
+<index>3</index><content>The user selects a delivery option, indicates agreement to the terms of service (required) and presses the &quot;proceed to checkout&quot; button</content><expected>The user is redirected to the &quot;payment&quot; section.</expected></step>
+<step>
+<index>4</index><content>The user selects a payment method and presses the &quot;I confirm my order&quot; button.</content><expected>The order is placed. Information appears &quot;Your order on My Store is complete.
+
+Please send us a bank wire with
+- Amount $18.51
+- Name of account owner Pradeep Macharla
+- Include these details xyz
+- Bank name RTP
+- Do not forget to insert your order reference FOKYGKUTY in the subject of your bank wire.
+An email has been sent with this information.
+Your order will be sent as soon as we receive payment.
+If you have questions, comments or concerns, please contact our expert customer support team. .&quot;</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>Proceed to checkout from the shopping cart ( logged in user, optional informations)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1 The user is logged in, 
+2 the user has added the product to the shopping cart, 
+3 the user is in &quot;SHOPPING-CART SUMMARY&quot;
+4 The user is in summary section</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &quot;proceed to checkout&quot; button</content><expected>The user is redirected to the &quot;address&quot; section.</expected></step>
+<step>
+<index>2</index><content>The user fills in the comment field (optional) and presses the &quot;proceed to checkout&quot; button</content><expected>The user is redirected to the &quot;shipping&quot; section.</expected></step>
+<step>
+<index>3</index><content>The user selects the delivery method and agrees to the terms of service (required) and presses the &quot;proceed to checkout&quot; button</content><expected>The user is redirected to the &quot;payment&quot; section.</expected></step>
+<step>
+<index>4</index><content>The user selects a payment method and presses the &quot;I confirm my order&quot; button</content><expected>The order is placed, information appears &quot;Your order on My Store is complete.
+
+Please send us a bank wire with
+- Amount $18.51
+- Name of account owner Pradeep Macharla
+- Include these details xyz
+- Bank name RTP
+- Do not forget to insert your order reference FOKYGKUTY in the subject of your bank wire.
+An email has been sent with this information.
+Your order will be sent as soon as we receive payment.
+If you have questions, comments or concerns, please contact our expert customer support team. .&quot;</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C23</id>
+				<title>Removing products from the shopping cart (logged in)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1 The user is logged in
+2 User added the product to the basket
+3 User is in the &quot;Shopping cart summary&quot; section</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the button with the bin icon.</content><expected>The product is removed from the basket.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Product details</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C27</id>
+				<title>The user is able to share the product on social media from product details  (Twitter)</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is in the &quot;product details&quot; section.</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &apos;Tweet&apos; button.</content><expected>A window appears with the option to share the product on Twitter.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C28</id>
+				<title>The user is able to share the product on social media from product details  (Facebook)</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is in the &quot;product details&quot; section</preconds>
+										<steps_separated><step>
+<index>1</index><content>User presses the &quot;share&quot; button (facebook)</content><expected>A window appears with the option to share the product on Facebook.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C29</id>
+				<title>The user is able to share the product on social media from product details  (Google+)</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is in the &quot;product details&quot; section</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &quot;Google +&quot; button</content><expected>A window appears with the option to share the product on Google+.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C30</id>
+				<title>The user is able to share the product on social media from product details  (Pinterest)</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is in the &quot;product details&quot; section</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user presses the &quot;Pinterest&quot; button</content><expected>A window appears with the option to share the product on Pinterest.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C31</id>
+				<title>The user can give feedback in the section &quot;product details&quot; (only required)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1 The user is logged in
+2 The user is in the &quot;product details&quot; section</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user clicks the &quot;write a review&quot; button.</content><expected>A window with an option to write a review appears.</expected></step>
+<step>
+<index>2</index><content>The user fills in the required fields &quot;Title&quot;, &quot;Comment&quot; and presses the send button.</content><expected>The comment is posted, a window appears with the information &quot;Your comment has been added and will be available once approved by a moderator&quot;
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C32</id>
+				<title>The user can give feedback in the section &quot;product details&quot; (optional data)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1 The user is logged in
+2 The user is in the &quot;product details&quot; section</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user clicks the &quot;write a review&quot; button.</content><expected>A window with an option to write a review appears.</expected></step>
+<step>
+<index>2</index><content>The user fills in the required fields (Title, Comment) and selects a rating from the &apos;quality&apos; field (optional, set to 3 by default) and presses the &apos;send&apos; button. </content><expected>The comment is posted, a window appears with the information &quot;Your comment has been added and will be available once approved by a moderator&quot;
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>

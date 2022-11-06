@@ -1,0 +1,305 @@
+﻿sep=,
+"ID","Title","Automation Type","Created By","Created On","Estimate","Expected Result","Forecast","Goals","Mission","Preconditions","Priority","References","Section","Section Depth","Section Description","Section Hierarchy","Steps","Steps","Steps (Additional Info)","Steps (Expected Result)","Steps (References)","Steps (Shared step ID)","Steps (Step)","Suite","Suite ID","Template","Type","Updated By","Updated On"
+"C1","Create account with required data"," None","Filip Milczarski","10/29/2022 1:43 PM","","","","","","User has an email address ","Critical","","Create account","0","","Create account","1. User enters his email address
+Expected Result:
+User's e-mail address appears in the text field 2. User clicks the button ""create an account""
+Expected Result:
+User is taken to a page to enter personal data 3. User fills in the fields with the required personal data (first name, last name, password, home address, postal address, country of residence, state, telephone number)
+Expected Result:
+The fields are filled in4.  User presses the ""register"" button
+Expected Result:
+User is transferred to the ""my account"" page","","1. 
+2. 
+3. 
+4.","1. User's e-mail address appears in the text field 
+2. User is taken to a page to enter personal data 
+3. The fields are filled in
+4. User is transferred to the ""my account"" page","1. 
+2. 
+3. 
+4.","1. 
+2. 
+3. 
+4.","1. User enters his email address
+2. User clicks the button ""create an account""
+3. User fills in the fields with the required personal data (first name, last name, password, home address, postal address, country of residence, state, telephone number)
+4.  User presses the ""register"" button","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 1:58 PM"
+"C2","Create an account (with optional data)"," None","Filip Milczarski","10/29/2022 2:08 PM","","","","","","the user has an email address","Critical","","Create account","0","","Create account","1. User enters the e-mail address in the text field.
+Expected Result:
+User's e-mail address appears in the text field.2. User presses create an account.
+Expected Result:
+User is transferred to the page for adding personal data.3. User fills in the fields with personal information (optional and required). 
+Expected Result:
+The fields are filled in.4. User presses the register button.
+Expected Result:
+User is redirected to the ""my account"" page.","","1. 
+2. 
+3. 
+4.","1. User's e-mail address appears in the text field.
+2. User is transferred to the page for adding personal data.
+3. The fields are filled in.
+4. User is redirected to the ""my account"" page.","1. 
+2. 
+3. 
+4.","1. 
+2. 
+3. 
+4.","1. User enters the e-mail address in the text field.
+2. User presses create an account.
+3. User fills in the fields with personal information (optional and required). 
+4. User presses the register button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 2:08 PM"
+"C3","The user can log in"," None","Filip Milczarski","10/29/2022 2:14 PM","","","","","","User has an account on the website","Critical","","Login","0","","Login","1. User enters the e-mail address and password in the text fields.
+Expected Result:
+The text fields are filled in.2. The user presses the ""Sign in"" button.
+Expected Result:
+The user is logged in and taken to the ""my account"" page.","","1. 
+2.","1. The text fields are filled in.
+2. The user is logged in and taken to the ""my account"" page.","1. 
+2.","1. 
+2.","1. User enters the e-mail address and password in the text fields.
+2. The user presses the ""Sign in"" button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 8:02 PM"
+"C5","The user can go to the login section"," None","Filip Milczarski","10/29/2022 2:27 PM","","","","","","User  has access to the home page.","Critical","","Login","0","","Login","1. The user presses the sign in button.
+
+![](index.php?/attachments/get/8f6f21b3-9411-4d21-80ba-d69091780a39)&nbsp; 
+Expected Result:
+User is taken to the ""AUTHENTICATION"" page.","","1.","1. User is taken to the ""AUTHENTICATION"" page.","1.","1.","1. The user presses the sign in button.
+
+![](index.php?/attachments/get/8f6f21b3-9411-4d21-80ba-d69091780a39)&nbsp;","Master","S1","Test Case (Steps)","Other","Filip Milczarski","10/29/2022 8:04 PM"
+"C8","User can log in with an incorrect password (negative)"," None","Filip Milczarski","10/29/2022 2:54 PM","","","","","","User has an account on the website.","Low","","Login","0","","Login","1. User fills in the fields ""email address"" and ""password"" with an incorrect password.
+Expected Result:
+User is not logged in and is taken to the ""my account"" page.","","1.","1. User is not logged in and is taken to the ""my account"" page.","1.","1.","1. User fills in the fields ""email address"" and ""password"" with an incorrect password.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 8:05 PM"
+"C22","The user can sign out"," None","Filip Milczarski","10/29/2022 4:44 PM","","","","","","The user is logged in.","Critical","","Login","0","","Login","1. The user presses the 'sign out' button.
+Expected Result:
+The user is logged out.","","1.","1. The user is logged out.","1.","1.","1. The user presses the 'sign out' button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 8:14 PM"
+"C6","Contact us button (logged in, required fields only)"," None","Filip Milczarski","10/29/2022 2:40 PM","","","","","","User is logged in on the website. ","High","","Contact us","0","","Contact us","1. User presses the 'contact us' button.
+Expected Result:
+User is redirected to the ""CUSTOMER SERVICE - CONTACT US"" page, with a pre-filled email address field.2. The user fills in the required fields (Subject heading, message) 
+Expected Result:
+The fields are filled in.3. The user presses the 'send' button.
+Expected Result:
+The message is sent.","","1. 
+2. 
+3.","1. User is redirected to the ""CUSTOMER SERVICE - CONTACT US"" page, with a pre-filled email address field.
+2. The fields are filled in.
+3. The message is sent.","1. 
+2. 
+3.","1. 
+2. 
+3.","1. User presses the 'contact us' button.
+2. The user fills in the required fields (Subject heading, message) 
+3. The user presses the 'send' button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 2:40 PM"
+"C7","sending messages via the 'contact us' section without filling in the 'message' field while logged in  (negative)"," None","Filip Milczarski","10/29/2022 2:53 PM","","","","","","User is logged in. ","Low","","Contact us","0","","Contact us","1. User fills in the required fields (Subject Heading), the email field is already filled in. 
+
+Expected Result:
+the text fields are filled in.2. The user presses the send button without filling in the 'message' field.
+Expected Result:
+Message is not sent.","","1. 
+2.","1. the text fields are filled in.
+2. Message is not sent.","1. 
+2.","1. 
+2.","1. User fills in the required fields (Subject Heading), the email field is already filled in. 
+
+2. The user presses the send button without filling in the 'message' field.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 2:53 PM"
+"C9","Sending messages via the 'contact us' section (not logged in, required fields only)"," None","Filip Milczarski","10/29/2022 3:02 PM","","","","","","The user is in the 'contact us' section and is not logged in.","High","","Contact us","0","","Contact us","1. User fills in all fields (Subject Heading, Email address, Order reference, Attach File, Message).
+
+Expected Result:
+The fields are filled in.2. User presses 'send' button.
+Expected Result:
+The message is sent.","","1. 
+2.","1. The fields are filled in.
+2. The message is sent.","1. 
+2.","1. 
+2.","1. User fills in all fields (Subject Heading, Email address, Order reference, Attach File, Message).
+
+2. User presses 'send' button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 3:06 PM"
+"C10","Sending messages via the 'contact us' section (logged in, additional data)"," None","Filip Milczarski","10/29/2022 3:13 PM","","","","","","User is not logged in to the website. User is on the 'CUSTOMER SERVICE - CONTACT US' page. ","High","","Contact us","0","","Contact us","1. The user fills in the required and optional fields (Subject Heading, Email address, Order reference, attach file, message). 
+Expected Result:
+the fields are filled in.2. User presses send button.
+Expected Result:
+The message is sent.","","1. 
+2.","1. the fields are filled in.
+2. The message is sent.","1. 
+2.","1. 
+2.","1. The user fills in the required and optional fields (Subject Heading, Email address, Order reference, attach file, message). 
+2. User presses send button.","Master","S1","Test Case (Steps)","Other","Filip Milczarski","10/29/2022 3:13 PM"
+"C11","Sending messages via the 'contact us' section (not logged in, additional data)"," None","Filip Milczarski","10/29/2022 3:18 PM","","","","","","User is not logged into the site, the user is in the 'Contact us' section.","High","","Contact us","0","","Contact us","1. The user fills in the required and optional fields (Subject Heading, Email address, Order reference, attach file, message)
+
+Expected Result:
+the fields are filled in.2. The user presses send button.
+Expected Result:
+the message is sent.","","1. 
+2.","1. the fields are filled in.
+2. the message is sent.","1. 
+2.","1. 
+2.","1. The user fills in the required and optional fields (Subject Heading, Email address, Order reference, attach file, message)
+
+2. The user presses send button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 3:18 PM"
+"C12","Using the quick view option on the home page"," None","Filip Milczarski","10/29/2022 3:24 PM","","","","","","The user is on the homepage.","Critical","","Quick view","0","","Quick view","1. The user moves the cursor over the image and presses the 'quick view' button. 
+Expected Result:
+The user is taken to the product preview.","","1.","1. The user is taken to the product preview.","1.","1.","1. The user moves the cursor over the image and presses the 'quick view' button.","Master","S1","Test Case (Steps)","Other","Filip Milczarski","10/29/2022 3:24 PM"
+"C13","Adding a product to the cart from the 'quick view' preview"," None","Filip Milczarski","10/29/2022 3:38 PM","","","","","","The user is in the 'quick view' preview.","Medium","","Quick view","0","","Quick view","1. The user selects values: quantity (default 1), size (default s) and colour.
+Expected Result:
+values are selected.2. The user presses the 'add to cart' button.
+Expected Result:
+The product is added to the shopping cart, you are redirected to the shopping cart summary page.","","1. 
+2.","1. values are selected.
+2. The product is added to the shopping cart, you are redirected to the shopping cart summary page.","1. 
+2.","1. 
+2.","1. The user selects values: quantity (default 1), size (default s) and colour.
+2. The user presses the 'add to cart' button.","Master","S1","Test Case (Steps)","Other","Filip Milczarski","10/29/2022 3:38 PM"
+"C14","The user is able to share the product on social media from quick view (Twitter)"," None","Filip Milczarski","10/29/2022 3:42 PM","","","","","","The user is in the 'quick view' preview.","Low","","Quick view","0","","Quick view","1. User presses ""Tweet"" button.
+Expected Result:
+A window appears with the option to publish a tweet.","","1.","1. A window appears with the option to publish a tweet.","1.","1.","1. User presses ""Tweet"" button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 4:54 PM"
+"C24","The user is able to share the product on social media from quick view (Facebook)"," None","Filip Milczarski","10/29/2022 4:57 PM","","","","","","The user is in a ""quick view"" preview","Low","","Quick view","0","","Quick view","1. User presses the ""share"" button (facebook)
+Expected Result:
+A window appears with the option to share the product on Facebook.","","1.","1. A window appears with the option to share the product on Facebook.","1.","1.","1. User presses the ""share"" button (facebook)","Master","S1","Test Case (Steps)","Other","Filip Milczarski","10/29/2022 4:57 PM"
+"C25","The user is able to share the product on social media from quick view (Google+)"," None","Filip Milczarski","10/29/2022 4:59 PM","","","","","","The user is in a ""quick view"" preview","Low","","Quick view","0","","Quick view","1. The user presses the ""Google +"" button. 
+Expected Result:
+A window appears with the option to share the product on Google+.","","1.","1. A window appears with the option to share the product on Google+.","1.","1.","1. The user presses the ""Google +"" button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 4:59 PM"
+"C26","The user is able to share the product on social media from quick view (Pinterest)"," None","Filip Milczarski","10/29/2022 5:01 PM","","","","","","The user is in a ""quick view"" preview.","Low","","Quick view","0","","Quick view","1. The user presses the ""Pinterest"" button
+Expected Result:
+A window appears with the option to share the product on Pinterest.","","1.","1. A window appears with the option to share the product on Pinterest.","1.","1.","1. The user presses the ""Pinterest"" button","Master","S1","Test Case (Steps)","Other","Filip Milczarski","10/29/2022 5:01 PM"
+"C15","Adding a product to the wish list from the quick view preview"," None","Filip Milczarski","10/29/2022 3:47 PM","","","","","","The user is logged in, the user is in quick view.","Medium","","Quick view","0","","Quick view","1. The user presses the 'add to wishlist' button.
+Expected Result:
+The product is added to the wishlist, the message ""product added to the wishlist"" appears.","","1.","1. The product is added to the wishlist, the message ""product added to the wishlist"" appears.","1.","1.","1. The user presses the 'add to wishlist' button.","Master","S1","Test Case (Steps)","Other","Filip Milczarski","10/29/2022 5:09 PM"
+"C18","Proceeding to checkout from the shopping basket summary"," None","Filip Milczarski","10/29/2022 4:04 PM","","","","","","The user is logged in, the user has added the product to the cart, the user is at the cart summary level.","Critical","","Cart","0","","Cart","1. The user presses the 'proceed to checkout' button.
+
+
+Expected Result:
+The user is transferred to the 'SHOPPING-CART SUMMARY' section.","","1.","1. The user is transferred to the 'SHOPPING-CART SUMMARY' section.","1.","1.","1. The user presses the 'proceed to checkout' button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 4:04 PM"
+"C16","Adding products to cart"," None","Filip Milczarski","10/29/2022 3:55 PM","","","","","","User is logged in, user is in product preview.","Critical","","Cart","0","","Cart","1. The user presses the 'add to cart' button.
+Expected Result:
+The user is redirected to the basket summary, the item is added to the basket. The buttons ""continue shopping"", ""Proceed to checkout"" are displayed.","","1.","1. The user is redirected to the basket summary, the item is added to the basket. The buttons ""continue shopping"", ""Proceed to checkout"" are displayed.","1.","1.","1. The user presses the 'add to cart' button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 5:09 PM"
+"C19","Proceed to checkout from the shopping cart (not logged)"," None","Filip Milczarski","10/29/2022 4:23 PM","","","","","","The user is not logged in, the user has added the product to the shopping cart, the user is in ""SHOPPING-CART SUMMARY"", in the 'summary' section.","Critical","","Cart","0","","Cart","1. The user presses the ""proceed to checkout"" button.
+Expected Result:
+The user is redirected to the 'sign in' section with a request to log in or create an account.","","1.","1. The user is redirected to the 'sign in' section with a request to log in or create an account.","1.","1.","1. The user presses the ""proceed to checkout"" button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 4:23 PM"
+"C20","Proceed to checkout from the shopping cart (logged in, no optional data)"," None","Filip Milczarski","10/29/2022 4:34 PM","","","","","","The user is logged in, the user has added the product to the shopping cart, the user is in ""SHOPPING-CART SUMMARY"", in the 'summary' section.","Critical","","Cart","0","","Cart","1. The user presses the ""proceed to checkout"" button.
+Expected Result:
+The user is redirected to the ""address"" section.2. The user presses the ""proceed to checkout"" button.
+Expected Result:
+The user is redirected to the ""shipping"" section.3. The user selects a delivery option, indicates agreement to the terms of service (required) and presses the ""proceed to checkout"" button
+Expected Result:
+The user is redirected to the ""payment"" section.4. The user selects a payment method and presses the ""I confirm my order"" button.
+Expected Result:
+The order is placed. Information appears ""Your order on My Store is complete.
+
+Please send us a bank wire with
+- Amount $18.51
+- Name of account owner Pradeep Macharla
+- Include these details xyz
+- Bank name RTP
+- Do not forget to insert your order reference FOKYGKUTY in the subject of your bank wire.
+An email has been sent with this information.
+Your order will be sent as soon as we receive payment.
+If you have questions, comments or concerns, please contact our expert customer support team. .""","","1. 
+2. 
+3. 
+4.","1. The user is redirected to the ""address"" section.
+2. The user is redirected to the ""shipping"" section.
+3. The user is redirected to the ""payment"" section.
+4. The order is placed. Information appears ""Your order on My Store is complete.
+
+Please send us a bank wire with
+- Amount $18.51
+- Name of account owner Pradeep Macharla
+- Include these details xyz
+- Bank name RTP
+- Do not forget to insert your order reference FOKYGKUTY in the subject of your bank wire.
+An email has been sent with this information.
+Your order will be sent as soon as we receive payment.
+If you have questions, comments or concerns, please contact our expert customer support team. .""","1. 
+2. 
+3. 
+4.","1. 
+2. 
+3. 
+4.","1. The user presses the ""proceed to checkout"" button.
+2. The user presses the ""proceed to checkout"" button.
+3. The user selects a delivery option, indicates agreement to the terms of service (required) and presses the ""proceed to checkout"" button
+4. The user selects a payment method and presses the ""I confirm my order"" button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 4:34 PM"
+"C21","Proceed to checkout from the shopping cart ( logged in user, optional informations)"," None","Filip Milczarski","10/29/2022 4:43 PM","","","","","","1 The user is logged in, 
+2 the user has added the product to the shopping cart, 
+3 the user is in ""SHOPPING-CART SUMMARY""
+4 The user is in summary section","Critical","","Cart","0","","Cart","1. The user presses the ""proceed to checkout"" button
+Expected Result:
+The user is redirected to the ""address"" section.2. The user fills in the comment field (optional) and presses the ""proceed to checkout"" button
+Expected Result:
+The user is redirected to the ""shipping"" section.3. The user selects the delivery method and agrees to the terms of service (required) and presses the ""proceed to checkout"" button
+Expected Result:
+The user is redirected to the ""payment"" section.4. The user selects a payment method and presses the ""I confirm my order"" button
+Expected Result:
+The order is placed, information appears ""Your order on My Store is complete.
+
+Please send us a bank wire with
+- Amount $18.51
+- Name of account owner Pradeep Macharla
+- Include these details xyz
+- Bank name RTP
+- Do not forget to insert your order reference FOKYGKUTY in the subject of your bank wire.
+An email has been sent with this information.
+Your order will be sent as soon as we receive payment.
+If you have questions, comments or concerns, please contact our expert customer support team. .""","","1. 
+2. 
+3. 
+4.","1. The user is redirected to the ""address"" section.
+2. The user is redirected to the ""shipping"" section.
+3. The user is redirected to the ""payment"" section.
+4. The order is placed, information appears ""Your order on My Store is complete.
+
+Please send us a bank wire with
+- Amount $18.51
+- Name of account owner Pradeep Macharla
+- Include these details xyz
+- Bank name RTP
+- Do not forget to insert your order reference FOKYGKUTY in the subject of your bank wire.
+An email has been sent with this information.
+Your order will be sent as soon as we receive payment.
+If you have questions, comments or concerns, please contact our expert customer support team. .""","1. 
+2. 
+3. 
+4.","1. 
+2. 
+3. 
+4.","1. The user presses the ""proceed to checkout"" button
+2. The user fills in the comment field (optional) and presses the ""proceed to checkout"" button
+3. The user selects the delivery method and agrees to the terms of service (required) and presses the ""proceed to checkout"" button
+4. The user selects a payment method and presses the ""I confirm my order"" button","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 4:43 PM"
+"C23","Removing products from the shopping cart (logged in)"," None","Filip Milczarski","10/29/2022 4:49 PM","","","","","","1 The user is logged in
+2 User added the product to the basket
+3 User is in the ""Shopping cart summary"" section","Critical","","Cart","0","","Cart","1. The user presses the button with the bin icon.
+Expected Result:
+The product is removed from the basket.","","1.","1. The product is removed from the basket.","1.","1.","1. The user presses the button with the bin icon.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 4:49 PM"
+"C27","The user is able to share the product on social media from product details  (Twitter)"," None","Filip Milczarski","10/29/2022 5:05 PM","","","","","","The user is in the ""product details"" section.","Low","","Product details","0","","Product details","1. The user presses the 'Tweet' button.
+Expected Result:
+A window appears with the option to share the product on Twitter.","","1.","1. A window appears with the option to share the product on Twitter.","1.","1.","1. The user presses the 'Tweet' button.","Master","S1","Test Case (Steps)","Other","Filip Milczarski","10/29/2022 5:05 PM"
+"C28","The user is able to share the product on social media from product details  (Facebook)"," None","Filip Milczarski","10/29/2022 5:06 PM","","","","","","The user is in the ""product details"" section","Low","","Product details","0","","Product details","1. User presses the ""share"" button (facebook)
+Expected Result:
+A window appears with the option to share the product on Facebook.","","1.","1. A window appears with the option to share the product on Facebook.","1.","1.","1. User presses the ""share"" button (facebook)","Master","S1","Test Case (Steps)","Other","Filip Milczarski","10/29/2022 5:06 PM"
+"C29","The user is able to share the product on social media from product details  (Google+)"," None","Filip Milczarski","10/29/2022 5:07 PM","","","","","","The user is in the ""product details"" section","Low","","Product details","0","","Product details","1. The user presses the ""Google +"" button
+Expected Result:
+A window appears with the option to share the product on Google+.","","1.","1. A window appears with the option to share the product on Google+.","1.","1.","1. The user presses the ""Google +"" button","Master","S1","Test Case (Steps)","Other","Filip Milczarski","10/29/2022 5:07 PM"
+"C30","The user is able to share the product on social media from product details  (Pinterest)"," None","Filip Milczarski","10/29/2022 5:08 PM","","","","","","The user is in the ""product details"" section","Low","","Product details","0","","Product details","1. The user presses the ""Pinterest"" button
+Expected Result:
+A window appears with the option to share the product on Pinterest.","","1.","1. A window appears with the option to share the product on Pinterest.","1.","1.","1. The user presses the ""Pinterest"" button","Master","S1","Test Case (Steps)","Other","Filip Milczarski","10/29/2022 5:08 PM"
+"C31","The user can give feedback in the section ""product details"" (only required)"," None","Filip Milczarski","10/29/2022 5:41 PM","","","","","","1 The user is logged in
+2 The user is in the ""product details"" section","Low","","Product details","0","","Product details","1. The user clicks the ""write a review"" button.
+Expected Result:
+A window with an option to write a review appears.2. The user fills in the required fields ""Title"", ""Comment"" and presses the send button.
+Expected Result:
+The comment is posted, a window appears with the information ""Your comment has been added and will be available once approved by a moderator""","","1. 
+2.","1. A window with an option to write a review appears.
+2. The comment is posted, a window appears with the information ""Your comment has been added and will be available once approved by a moderator""","1. 
+2.","1. 
+2.","1. The user clicks the ""write a review"" button.
+2. The user fills in the required fields ""Title"", ""Comment"" and presses the send button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 5:41 PM"
+"C32","The user can give feedback in the section ""product details"" (optional data)"," None","Filip Milczarski","10/29/2022 5:46 PM","","","","","","1 The user is logged in
+2 The user is in the ""product details"" section","Low","","Product details","0","","Product details","1. The user clicks the ""write a review"" button.
+Expected Result:
+A window with an option to write a review appears.2. The user fills in the required fields (Title, Comment) and selects a rating from the 'quality' field (optional, set to 3 by default) and presses the 'send' button. 
+Expected Result:
+The comment is posted, a window appears with the information ""Your comment has been added and will be available once approved by a moderator""","","1. 
+2.","1. A window with an option to write a review appears.
+2. The comment is posted, a window appears with the information ""Your comment has been added and will be available once approved by a moderator""","1. 
+2.","1. 
+2.","1. The user clicks the ""write a review"" button.
+2. The user fills in the required fields (Title, Comment) and selects a rating from the 'quality' field (optional, set to 3 by default) and presses the 'send' button.","Master","S1","Test Case (Steps)","Functional","Filip Milczarski","10/29/2022 5:46 PM"
